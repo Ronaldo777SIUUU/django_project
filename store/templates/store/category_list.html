@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категории</title>
+</head>
+<body>
+    <p><a href="{%  %}">Добавить категорию</a></p>
+    <h1>Категории:</h1>
+    {% for category in categories %}
+        <h2><a href="#">{{ category.title }}</a> - {{ category.description }}...</h2>
+    {% endfor %}
+</body>
+</html>
